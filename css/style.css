@@ -35,6 +35,12 @@ section h2 {
     color: #4CAF50;
 }
 
+/* Carrossel: ajuste para melhor visualização em dispositivos móveis */
+.carousel-inner img {
+    max-height: 500px;  /* Ajusta a altura das imagens para garantir uma boa visualização */
+    object-fit: cover;  /* Garante que as imagens se ajustem ao tamanho sem distorcer */
+}
+
 /* Footer Styling */
 footer {
     background-color: #222;
