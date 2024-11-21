@@ -82,3 +82,17 @@ footer {
         font-size: 0.8rem; /* Fonte menor para os nomes */
     }
 }
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem; /* Reduz o padding lateral em telas menores */
+    }
+}
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 576px) {
+    section {
+        padding: 1.5rem 0.5rem; /* Padding ainda menor para dispositivos pequenos */
+    }
+}
