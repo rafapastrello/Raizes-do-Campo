@@ -24,6 +24,20 @@ body {
     font-weight: 700; /* Peso da fonte */
 }
 
+/* Estilizando o link "Nossa Empresa" */
+.nossa-empresa, 
+/* Estilizando o link "Apresentação e Trabalho da Turma" */
+.trabalho-turma {
+    color: #FFD700;  /* Cor amarela */
+    text-decoration: none; /* Remove o sublinhado (se necessário) */
+}
+
+/* Adicionando o efeito hover para os links */
+.nossa-empresa:hover, 
+.trabalho-turma:hover {
+    color: #FFEA00; /* Cor amarela mais clara ao passar o mouse */
+}
+
 /* Section Styling */
 section {
     padding: 4rem 2rem;
@@ -115,29 +129,7 @@ footer ul li a:hover {
     footer a {
         font-size: 1rem;
     }
-}
 
-
-/* Ajuste para telas pequenas */
-/* Corrige o layout das abas em telas pequenas */
-@media (max-width: 576px) {
-    #abas .nav-pills .nav-link {
-        font-size: 12px; /* Reduz o tamanho da fonte */
-        padding: 0.5rem 0.5rem; /* Ajusta o espaçamento interno */
-    }
-
-    #abas .nav-pills {
-        justify-content: center; /* Centraliza as abas */
-    }
-
-    #abas .nav-item {
-        flex: 1; /* Faz as abas ocuparem o mesmo espaço */
-        text-align: center; /* Centraliza o texto das abas */
-    }
-}
-
-/* Ajuste para telas pequenas */
-@media (max-width: 768px) {
     #galeria .col-md-3 {
         flex: 0 0 33.33%; /* Cada perfil ocupa um terço da linha */
         max-width: 33.33%; /* Limita a largura máxima a um terço */
@@ -151,9 +143,13 @@ footer ul li a:hover {
     #galeria h5 {
         font-size: 0.9rem; /* Reduz o tamanho da fonte do nome */
     }
+
+    section {
+        padding: 2rem 1rem; /* Reduz o padding lateral em telas menores */
+    }
 }
 
-/* Ajuste adicional para telas muito pequenas */
+/* Ajuste para telas muito pequenas */
 @media (max-width: 576px) {
     #galeria .col-md-3 {
         flex: 0 0 50%; /* Cada perfil ocupa metade da linha */
@@ -168,18 +164,37 @@ footer ul li a:hover {
     #galeria h5 {
         font-size: 0.8rem; /* Fonte menor para os nomes */
     }
-}
 
-/* Ajuste para telas pequenas */
-@media (max-width: 768px) {
-    section {
-        padding: 2rem 1rem; /* Reduz o padding lateral em telas menores */
-    }
-}
-
-/* Ajuste para telas muito pequenas */
-@media (max-width: 576px) {
     section {
         padding: 1.5rem 0.5rem; /* Padding ainda menor para dispositivos pequenos */
     }
+
+    #abas .nav-pills .nav-link {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding: 0.5rem 0.5rem; /* Ajusta o espaçamento interno */
+    }
+
+    #abas .nav-pills {
+        display: flex; /* Flexbox dentro do contêiner de abas */
+        justify-content: center; /* Centraliza as abas horizontalmente */
+        padding-left: 0; /* Remove a margem padrão */
+        list-style: none; /* Remove os marcadores */
+    }
+
+    #abas .nav-item {
+        flex: 1; /* Faz as abas ocuparem o mesmo espaço */
+        text-align: center; /* Centraliza o texto das abas */
+    }
+}
+
+/* Centraliza as abas */
+#abas {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+/* Opcional: Centraliza o texto das abas se necessário */
+#abas .nav-pills .nav-item {
+    text-align: center; /* Centraliza o texto das abas */
 }
