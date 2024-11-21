@@ -41,3 +41,44 @@ footer {
     padding: 2rem;
     font-size: 0.9rem;
 }
+
+/* Ajuste para telas pequenas */
+@media (max-width: 576px) {
+    .nav-pills .nav-link {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    #galeria .col-md-3 {
+        flex: 0 0 33.33%; /* Cada perfil ocupa um terço da linha */
+        max-width: 33.33%; /* Limita a largura máxima a um terço */
+    }
+
+    #galeria img {
+        width: 100px; /* Reduz o tamanho das imagens */
+        height: 100px; /* Mantém o formato circular */
+    }
+
+    #galeria h5 {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do nome */
+    }
+}
+
+/* Ajuste adicional para telas muito pequenas */
+@media (max-width: 576px) {
+    #galeria .col-md-3 {
+        flex: 0 0 50%; /* Cada perfil ocupa metade da linha */
+        max-width: 50%; /* Limita a largura máxima a metade */
+    }
+
+    #galeria img {
+        width: 80px; /* Reduz ainda mais as imagens */
+        height: 80px;
+    }
+
+    #galeria h5 {
+        font-size: 0.8rem; /* Fonte menor para os nomes */
+    }
+}
