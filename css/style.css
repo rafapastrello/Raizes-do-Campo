@@ -1,0 +1,43 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/hero.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Tamanho maior para o título da seção hero */
+.hero h1 {
+    font-size: 4rem; /* Ajuste o tamanho conforme desejado */
+    font-weight: 700; /* Peso da fonte */
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
