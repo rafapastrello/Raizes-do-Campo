@@ -24,19 +24,12 @@ body {
     font-weight: 700; /* Peso da fonte */
 }
 
-/* Estilizando o link "Nossa Empresa" */
-.nossa-empresa, 
-/* Estilizando o link "Apresentação e Trabalho da Turma" */
-.trabalho-turma {
-    color: #FFD700;  /* Cor amarela */
-    text-decoration: none; /* Remove o sublinhado (se necessário) */
+.saiba-mais:hover {
+    color: #ffffff;
+    background-color: #4CAF50;
 }
 
-/* Adicionando o efeito hover para os links */
-.nossa-empresa:hover, 
-.trabalho-turma:hover {
-    color: #FFEA00; /* Cor amarela mais clara ao passar o mouse */
-}
+
 
 /* Section Styling */
 section {
