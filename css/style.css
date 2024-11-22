@@ -235,6 +235,27 @@ footer ul li a:hover {
         font-size: 0.8rem; /* Fonte menor para os nomes */
     }
 
+/* Galeria dos Participantes */
+#galeria {
+    padding: 3rem 0; /* Padding padrão, para telas maiores */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    /* Remove as margens laterais no container */
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Remove o padding da seção de galeria para telas menores */
+    #galeria {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
     section {
         padding: 1.5rem 0.5rem; /* Padding ainda menor para dispositivos pequenos */
     }
