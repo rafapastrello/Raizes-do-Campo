@@ -201,7 +201,9 @@
                                         humana?<br><strong>Resposta:</strong> Produção de alimentos como farinha de
                                         milho, fubá, pipoca, e tortilhas.
                                     </li>
-                                    <li><strong>Entre outras, para saber mais, acesse o drive da Raízes do Campo disponibilizada em <a href="/html/disciplinas.html" class="text-primary">Disciplinas</a></strong>
+                                    <li><strong>Entre outras, para saber mais, acesse o drive da Raízes do Campo
+                                            disponibilizada em <a href="/html/disciplinas.html"
+                                                class="text-primary">Disciplinas</a></strong>
                                     </li>
                                 </ul>
                             </div>
@@ -240,13 +242,48 @@
                         </div>
                     </section>
 
-
                     <!-- Seção "Sobre o Site" -->
                     <section id="site" class="py-5">
                         <div class="container">
-                            <h2>Sobre o Site</h2>
+                            <!-- Título com ícone de seta à esquerda -->
+                            <div class="d-flex align-items-center">
+                                <button id="toggleSiteDescription" class="btn btn-link text-decoration-none me-2">
+                                    <i class="fas fa-chevron-down"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </button>
+                                <h2>Sobre o Site</h2>
+                            </div>
+
+                            <!-- Descrição inicial -->
                             <p>O site foi criado para apresentar as informações do projeto e interagir com o público,
                                 com destaque para a usabilidade e design.</p>
+
+                            <!-- Descrição mais completa (inicialmente oculta) -->
+                            <div id="fullSiteDescription" class="d-none">
+                                <p>Ele conta com a nossa galeria completa de fotos, informações sobre o nosso projeto,
+                                    como: “Nossa Maquete”, “Sobre o Quiz”, “Sobre o Site”, “Sobre os Cartazes”, “Sobre a
+                                    exposição de livros” e o vínculo com as disciplinas.</p>
+
+                                <p>Sendo que na página inicial está dividido em informações sobre a “Nossa Empresa e
+                                    Apresentação” e outra aba mostrando o “Trabalho da Turma”.</p>
+
+                                <p>Foi desenvolvido pela aluna Rafaela Pastrello da turma 2G, que estuda programação há
+                                    2 anos, e atualmente trabalha na Cyber E-dux, uma empresa especializada em educação
+                                    tecnológica.</p>
+
+                                <p>O site foi desenvolvido em menos de uma semana, não apresenta boas práticas de
+                                    programação pois foi focado apenas no frontend, pela falta de tempo. Mas a
+                                    desenvolvedora tem a intenção de aprimorar o código utilizando uma linguagem de
+                                    programação backend e fazendo o uso de um banco de dados.</p>
+
+                                <p>O código do site está disponível no GitHub da desenvolvedora: <a
+                                        href="https://github.com/rafapastrello/Raizes-do-Campo.git"
+                                        target="_blank">https://github.com/rafapastrello/Raizes-do-Campo.git</a></p>
+                            </div>
 
                             <!-- Carrossel de Imagens do Site -->
                             <div id="carouselSite" class="carousel slide" data-bs-ride="carousel">
@@ -277,6 +314,7 @@
                             </div>
                         </div>
                     </section>
+
 
                     <!-- Seção "Sobre os Cartazes" -->
                     <section id="cartazes" class="py-5">

@@ -54,3 +54,19 @@ toggleButton.addEventListener('click', function() {
     icon.classList.toggle('fa-chevron-up');
 });
 
+// Script para alternar visibilidade da descrição do site
+document.getElementById('toggleSiteDescription').addEventListener('click', function () {
+    const fullSiteDescription = document.getElementById('fullSiteDescription');
+    const icon = this.querySelector('i');
+    
+    // Alterna a visibilidade da descrição
+    if (fullSiteDescription.classList.contains('d-none')) {
+        fullSiteDescription.classList.remove('d-none');  // Exibe a descrição
+        icon.classList.remove('fa-chevron-down');       // Muda o ícone
+        icon.classList.add('fa-chevron-up');            // para seta para cima
+    } else {
+        fullSiteDescription.classList.add('d-none');    // Oculta a descrição
+        icon.classList.remove('fa-chevron-up');         // Muda o ícone
+        icon.classList.add('fa-chevron-down');          // para seta para baixo
+    }
+});
