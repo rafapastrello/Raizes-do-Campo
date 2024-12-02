@@ -20,13 +20,33 @@ links.forEach(link => {
     });
 });
 
+// Botão de Voltar ao Topo
+const backToTopButton = document.getElementById('backToTop');
+
+// Mostrar ou ocultar o botão com base na posição da rolagem
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) { // Exibe o botão ao rolar 200px para baixo
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+// Voltar ao topo ao clicar no botão
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Suavidade na rolagem
+    });
+});
+
 
 // Script para alternar visibilidade da descrição
 
 document.getElementById('toggleDescription').addEventListener('click', function () {
     const fullDescription = document.getElementById('fullDescription');
     const icon = this.querySelector('i');
-    
+
     // Alterna a visibilidade da descrição
     if (fullDescription.classList.contains('d-none')) {
         fullDescription.classList.remove('d-none');  // Exibe a descrição
@@ -44,10 +64,10 @@ const toggleButton = document.getElementById('toggleQuizDescription');
 const fullDescription = document.getElementById('fullQuizDescription');
 
 // Função para alternar a visibilidade da descrição
-toggleButton.addEventListener('click', function() {
+toggleButton.addEventListener('click', function () {
     // Alterna a classe 'd-none' para mostrar ou esconder a descrição
     fullDescription.classList.toggle('d-none');
-    
+
     // Alterna o ícone da seta (muda de cima para baixo)
     const icon = toggleButton.querySelector('i');
     icon.classList.toggle('fa-chevron-down');
@@ -58,7 +78,7 @@ toggleButton.addEventListener('click', function() {
 document.getElementById('toggleSiteDescription').addEventListener('click', function () {
     const fullSiteDescription = document.getElementById('fullSiteDescription');
     const icon = this.querySelector('i');
-    
+
     // Alterna a visibilidade da descrição
     if (fullSiteDescription.classList.contains('d-none')) {
         fullSiteDescription.classList.remove('d-none');  // Exibe a descrição
@@ -75,7 +95,7 @@ document.getElementById('toggleSiteDescription').addEventListener('click', funct
 document.getElementById('toggleCartazesDescription').addEventListener('click', function () {
     const fullCartazesDescription = document.getElementById('fullCartazesDescription');
     const icon = this.querySelector('i');
-    
+
     // Alterna a visibilidade da descrição
     if (fullCartazesDescription.classList.contains('d-none')) {
         fullCartazesDescription.classList.remove('d-none');  // Exibe a descrição

@@ -7,6 +7,27 @@ body {
     color: #333;
 }
 
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Azul bootstrap */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    transform: scale(1.1);
+}
+
 /* Hero Section */
 .hero {
     background: url('../img/hero.png') no-repeat center center/cover;
@@ -20,8 +41,10 @@ body {
 
 /* Tamanho maior para o título da seção hero */
 .hero h1 {
-    font-size: 4rem; /* Ajuste o tamanho conforme desejado */
-    font-weight: 700; /* Peso da fonte */
+    font-size: 4rem;
+    /* Ajuste o tamanho conforme desejado */
+    font-weight: 700;
+    /* Peso da fonte */
 }
 
 .saiba-mais:hover {
@@ -44,8 +67,10 @@ section h2 {
 
 /* Carrossel: ajuste para melhor visualização em dispositivos móveis */
 .carousel-inner img {
-    max-height: 500px;  /* Ajusta a altura das imagens para garantir uma boa visualização */
-    object-fit: cover;  /* Garante que as imagens se ajustem ao tamanho sem distorcer */
+    max-height: 500px;
+    /* Ajusta a altura das imagens para garantir uma boa visualização */
+    object-fit: cover;
+    /* Garante que as imagens se ajustem ao tamanho sem distorcer */
 }
 
 /* Estilo para o botão */
@@ -64,14 +89,16 @@ section h2 {
 }
 
 .btn:hover {
-    background-color: #45a049; /* Efeito hover */
+    background-color: #45a049;
+    /* Efeito hover */
 }
 
 /* Estilo da página disciplinas.html */
 #lista-disciplinas {
     padding: 2rem;
     max-width: 800px;
-    margin: 0 auto; /* Centraliza a seção na tela */
+    margin: 0 auto;
+    /* Centraliza a seção na tela */
 }
 
 #lista-disciplinas article {
@@ -142,7 +169,8 @@ footer .img-fluid {
 /* Títulos de cada seção do Footer */
 footer h5 {
     font-weight: bold;
-    color: #4CAF50; /* Verde que combina com o tema */
+    color: #4CAF50;
+    /* Verde que combina com o tema */
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -154,7 +182,8 @@ footer a {
 }
 
 footer a:hover {
-    color: #4CAF50; /* Efeito hover verde */
+    color: #4CAF50;
+    /* Efeito hover verde */
 }
 
 /* Links Rápidos: Estilo das listas */
@@ -201,91 +230,116 @@ footer ul li a:hover {
     }
 
     #galeria .col-md-3 {
-        flex: 0 0 33.33%; /* Cada perfil ocupa um terço da linha */
-        max-width: 33.33%; /* Limita a largura máxima a um terço */
+        flex: 0 0 33.33%;
+        /* Cada perfil ocupa um terço da linha */
+        max-width: 33.33%;
+        /* Limita a largura máxima a um terço */
     }
 
     #galeria img {
-        width: 100px; /* Reduz o tamanho das imagens */
-        height: 100px; /* Mantém o formato circular */
+        width: 100px;
+        /* Reduz o tamanho das imagens */
+        height: 100px;
+        /* Mantém o formato circular */
     }
 
     #galeria h5 {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte do nome */
+        font-size: 0.9rem;
+        /* Reduz o tamanho da fonte do nome */
     }
 
     section {
-        padding: 2rem 1rem; /* Reduz o padding lateral em telas menores */
+        padding: 2rem 1rem;
+        /* Reduz o padding lateral em telas menores */
     }
 }
 
 /* Ajuste para telas muito pequenas */
 @media (max-width: 576px) {
     #galeria .col-md-3 {
-        flex: 0 0 50%; /* Cada perfil ocupa metade da linha */
-        max-width: 50%; /* Limita a largura máxima a metade */
+        flex: 0 0 50%;
+        /* Cada perfil ocupa metade da linha */
+        max-width: 50%;
+        /* Limita a largura máxima a metade */
     }
 
     #galeria img {
-        width: 80px; /* Reduz ainda mais as imagens */
+        width: 80px;
+        /* Reduz ainda mais as imagens */
         height: 80px;
     }
 
     #galeria h5 {
-        font-size: 0.8rem; /* Fonte menor para os nomes */
+        font-size: 0.8rem;
+        /* Fonte menor para os nomes */
     }
 
-/* Galeria dos Participantes */
-#galeria {
-    padding: 3rem 0; /* Padding padrão, para telas maiores */
-}
-
-/* Ajuste para telas menores */
-@media (max-width: 768px) {
-    /* Remove as margens laterais no container */
-    .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Remove o padding da seção de galeria para telas menores */
+    /* Galeria dos Participantes */
     #galeria {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 3rem 0;
+        /* Padding padrão, para telas maiores */
     }
-}
+
+    /* Ajuste para telas menores */
+    @media (max-width: 768px) {
+
+        /* Remove as margens laterais no container */
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        /* Remove o padding da seção de galeria para telas menores */
+        #galeria {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 
 
     section {
-        padding: 1.5rem 0.5rem; /* Padding ainda menor para dispositivos pequenos */
+        padding: 1.5rem 0.5rem;
+        /* Padding ainda menor para dispositivos pequenos */
     }
 
     #abas .nav-pills .nav-link {
-        font-size: 12px; /* Reduz o tamanho da fonte */
-        padding: 0.5rem 0.5rem; /* Ajusta o espaçamento interno */
+        font-size: 12px;
+        /* Reduz o tamanho da fonte */
+        padding: 0.5rem 0.5rem;
+        /* Ajusta o espaçamento interno */
     }
 
     #abas .nav-pills {
-        display: flex; /* Flexbox dentro do contêiner de abas */
-        justify-content: center; /* Centraliza as abas horizontalmente */
-        padding-left: 0; /* Remove a margem padrão */
-        list-style: none; /* Remove os marcadores */
+        display: flex;
+        /* Flexbox dentro do contêiner de abas */
+        justify-content: center;
+        /* Centraliza as abas horizontalmente */
+        padding-left: 0;
+        /* Remove a margem padrão */
+        list-style: none;
+        /* Remove os marcadores */
     }
 
     #abas .nav-item {
-        flex: 1; /* Faz as abas ocuparem o mesmo espaço */
-        text-align: center; /* Centraliza o texto das abas */
+        flex: 1;
+        /* Faz as abas ocuparem o mesmo espaço */
+        text-align: center;
+        /* Centraliza o texto das abas */
     }
 }
 
 /* Centraliza as abas */
 #abas {
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    width: 100%;
+    /* Garante que o contêiner ocupe toda a largura disponível */
 }
 
 /* Opcional: Centraliza o texto das abas se necessário */
 #abas .nav-pills .nav-item {
-    text-align: center; /* Centraliza o texto das abas */
+    text-align: center;
+    /* Centraliza o texto das abas */
 }
