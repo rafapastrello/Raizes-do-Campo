@@ -44,4 +44,16 @@ O **Raízes do Campo** é uma iniciativa voltada para a compreensão prática de
 
 1. Clone este repositório:  
    ```bash  
-   git clone https://github.com/rafapastrello/Raizes-do-Campo.git  
+   git clone https://github.com/rafapastrello/Raizes-do-Campo.git
+
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd Raizes-do-Campo  
+
+## 👫 Créditos
+Site desenvolvido por: Rafaela Pastrello.
+Trabalho: Turma do 2º ano G.
+Apoio e supervisão: Professores e coordenação escolar.
+
+## 📜 Licença
+Este projeto é para fins educacionais e está disponível como open-source.
