@@ -34,6 +34,7 @@ O **Raízes do Campo** é uma iniciativa voltada para a compreensão prática de
 - Implementação de backend para funcionalidades avançadas.  
 - Otimização do design responsivo para diferentes dispositivos.  
 - Adição de animações e interatividade aprimoradas.  
+- Postagens dos alunos e blog.  
 
 ## 🎨 Links Importantes  
 
